@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function pressed(e) {
+        if (e.key == "A") {
+            document.getElementById("p1").innerHTML = "vowel is present" + e.keyCode
+        }
+        document.getElementById("p1").innerHTML = e.keyCode
+    }
+    function f3(id) {
+        id.bgColor = "lightgreen"
+    }
+</script>
+
+<body onkeypress="pressed(this)" onkeyup="f3(this)">
+    <!-- Write JS to handle following key events
+     1. script should give msg vowel is pressed on pressing vowel key 
+     2.give key code for the key pressed
+     3.backround color should changeed to light after releasing the pressed ley-->
+
+</body>
+
+</html>

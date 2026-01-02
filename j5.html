@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Up(bg, tx, fw = "uppercase") {
+            i = document.getElementById("d1");
+            i.style.backgroundColor = bg;
+            i.style.color = tx;//font color
+            i.style.textTransform = fw;
+
+
+        }
+        function low(bg, tx, fw = "lowercase") {
+            i = document.getElementById("d1");
+            i.style.backgroundColor = bg;
+            i.style.color = tx;
+            i.style.textTransform = fw;
+
+
+        }
+    </script>
+    <div id="d1">Hello Stranger!!</div>
+    <input type="button" value="Upper" onclick="Up('pink','blue')">
+    <input type="button" value="Lower" onclick="low('yellow','green')">
+
+</body>
+
+</html>

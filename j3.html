@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="p1" align="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo voluptas mollitia veniam
+        corporis totam ipsa rerum earum porro consequatur magnam. Recusandae, impedit esse quo nam ea perferendis
+        sapiente repellat alias?</p>
+    <p id="p2" title="demo text">Hello</p>
+    <img id="img1">
+    <script>
+        document.getElementById("demo").innerHTML = "<b >Hello</b>";
+        document.getElementById("img1").setAttribute("src", "code.PNG");
+        document.getElementById("p2").removeAttribute("title");
+        alert(document.getElementById("p2").getAttribute("title"))
+    </script>
+</body>
+
+</html>

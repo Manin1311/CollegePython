@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script>
+        function down() {
+            document.getElementById("test").innerHTML = "Mouse down";
+        }
+        function up(x) {
+            x.innerHTML = "Mouse up";
+        }
+        function mdown(e) {
+            e.style.backgroundColor = "yellow";
+            e.innerHTML = "press";
+        }
+        function mup(e) {
+            e.style.backgroundColor = "lightgreen";
+            e.innerHTML = "release"
+        }
+
+    </script>
+    <p id="test" onmousedown="down()">text here</p>
+    <p onmouseup="up(this)">Text Here</p>
+    <p onmouseover="this.style.color='pink'; this.innerHTML='changed text'">Text Here</p>
+    <h2 onclick="alert(this.innerHTML)">Hello</h2>
+    <div onmousedown="mdown(this)" onmouseup="mup(this)"
+        style="background-color: lightblue; width:70px;height:30px;padding:20px"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <p id="p1">Hello</p>
+    <p class="c1">Text 1</p>
+    <p class="c1">Text 2</p>
+
+    <script>
+        document.getElementById("p1").innerHTML = "Hi Everyone";
+        var x = document.getElementsByClassName("c1");
+        <!-- x[0].innerHTML = "text Changed"; -->
+        for (var i = 0; i < x.length; i++) {
+            x[i].innerHTML = "text changed for all";
+        }
+
+        document.querySelector("p").style.color = "red";
+        
+    </script>
+</body>
+
+</html>

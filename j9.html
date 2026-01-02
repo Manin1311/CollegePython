@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function mover() {
+        document.getElementById('heading').style.color = 'yellow'
+    }
+
+    function mout() {
+        document.getElementById('heading').style.color = 'black'
+    }
+
+    function time() {
+        d = new Date();
+        document.getElementById('tim').innerHTML = d
+    }
+
+    function turngreen() {
+        document.getElementById('body').style.backgroundColor = 'green'
+    }
+
+    function turnblue() {
+        document.getElementById('body').style.backgroundColor = 'blue'
+    }
+</script>
+
+<body id="body">
+    <h1 id="heading" onmouseover="mover()" onmouseout="mout()" style="color:green;">HEADING</h1>
+    <!-- WRITE JS TO HANDLE FOLLOWING MOUSE EVENTS IF MOUSE IS OVER HEADING IT SHOULD TURN YELLOW 
+     IF MOUSE GOES OUT IT SHOULD TURNS BLACK
+     IF FIND TIME BUTTON IS CLICKED THEN SHOW DATE AND TIME INFORMATION
+     IF BUTTON NAME GREEN IS CLICKED THEN BACKGROUND COLOR SHOULD TURN GREEN 
+     AND WHEN BUTTON NAMED BLUE IS CLICKED THEN BG COLOR SHOULD TURN BLUE-->
+    <p id="tim">time</p>
+    <input type="button" value="Time" onclick="time()">
+    <input type="button" value="Green" onclick="turngreen()">
+    <input type="button" value="Blue" onclick="turnblue()">
+</body>
+
+</html>

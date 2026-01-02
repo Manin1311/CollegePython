@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- Write function to be called on button click and take one division with some text and no decoration initially, take font-size and style as default argument, pass background-color and text color while passing argument to function, function style should change on button click -->
+    <script>
+        function click1(bg, tx, size = "50px", fs = "italic") {
+            i = document.getElementById("d1");
+            i.style.backgroundColor = bg;
+            i.style.color = tx;
+            i.style.fontSize = size;
+            i.style.fontStyle = fs;
+
+        }
+    </script>
+    <div id="d1">Hello There!</div>
+    <input type="button" value="click here" onclick="click1('red','blue')">
+
+
+</body>
+
+</html>
